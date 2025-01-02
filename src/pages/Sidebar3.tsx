@@ -1,10 +1,7 @@
 // Sidebar2.js
-import React from 'react'
 import CustomStyling from '../components/CustomStyling'
 import Header from '../components/Header'
-import Cards from '../components/Cards'
 import Card2 from '../components/Card2'
-import { BackgroundGradient } from '../components/ui/background-gradient'
 
 const Sidebar3 = () => {
   return (
