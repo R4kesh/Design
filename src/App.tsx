@@ -14,7 +14,7 @@ export default function App() {
         <Route path="/" element={<Sidebar />} />
         <Route path="/sidebar2" element={<Sidebar2/>} />
         <Route path="/sidebar3" element={<Sidebar3/>} />
-<></>
+
 
         
       </Routes>
