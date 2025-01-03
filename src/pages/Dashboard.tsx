@@ -59,6 +59,7 @@ import React, { useState } from "react";
 import { MultiLevelSidebar } from "../components/DashBoard/Sidebar";
 import Navbar from "../components/DashBoard/Navbar";
 import Nav_Icons from "../components/DashBoard/Nav_Icons";
+import { SideCards } from "../components/DashBoard/SideCards";
 
 function Dashboard() {
   // State for sidebar expansion
@@ -105,6 +106,7 @@ function Dashboard() {
               Main content goes here
             </div>
           </div> */}
+          <SideCards/>
         </div>
 
         {/* Nav_Icons positioned on the right side for large screens */}
