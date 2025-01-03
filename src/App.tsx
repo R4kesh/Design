@@ -6,6 +6,7 @@ import Sidebar3 from './pages/Sidebar3';
 import Sidebar4_1 from './pages/Sidebar4_1';
 import Form1Page from './pages/Form1Page';
 import Form2Page from './pages/Form2Page';
+import Dashboard from './pages/Dashboard';
 
 
 
@@ -20,6 +21,7 @@ export default function App() {
         <Route path="/sidebar4_1" element={<Sidebar4_1/>} />
         <Route path="/form1" element={<Form1Page/>} />
         <Route path="/form2" element={<Form2Page/>} />
+        <Route path="/dashboard" element={<Dashboard/>} />
 
 
         
