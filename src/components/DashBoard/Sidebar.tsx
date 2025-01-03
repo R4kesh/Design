@@ -221,7 +221,6 @@
 //     );
 //   }
   
-
 import React from "react";
 import {
   List,
@@ -260,8 +259,8 @@ export function MultiLevelSidebar({ isExpanded }) {
 
   // Pagination state for Patient sub-items
   const [currentPage, setCurrentPage] = React.useState(1);
-  const itemsPerPage = 2; // Limit per page
-  const patientItems = ["Analytics", "Reporting", "Projects","Subject"]; // Sub-items for Patient
+  const itemsPerPage = 6; // Limit per page
+  const patientItems = ["Analytics", "Reporting", "Projects", "Subject", "Result", "Current Status", "Medicine", "Report", "Previous Diagnostic", "Current Doctor", "Supplementary", "Case File"]; // Sub-items for Patient
 
   // Calculate the index range for the current page
   const indexOfLastItem = currentPage * itemsPerPage;
@@ -324,7 +323,7 @@ export function MultiLevelSidebar({ isExpanded }) {
             </List>
 
             {/* Pagination Controls */}
-            <div className="flex justify-between mt-2">
+            <div className="flex justify-between items-center mt-2">
               <button
                 onClick={prevPage}
                 disabled={currentPage === 1}
@@ -332,6 +331,9 @@ export function MultiLevelSidebar({ isExpanded }) {
               >
                 Previous
               </button>
+              <span className="text-sm text-gray-500">
+                Page {currentPage} of {Math.ceil(patientItems.length / itemsPerPage)}
+              </span>
               <button
                 onClick={nextPage}
                 disabled={currentPage === Math.ceil(patientItems.length / itemsPerPage)}
