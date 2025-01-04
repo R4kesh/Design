@@ -100,12 +100,12 @@ function Dashboard() {
 </div>
 
         {/* Main Content Section */}
-        <div className="flex-1 flex flex-col p-4">
-          {/* <div className="w-full mb-4">
-            <div className="flex-1 bg-gray-100 rounded-md shadow p-4">
+        <div className=" p-4">
+          <div className="w-full mb-4">
+            <div className=" bg-gray-100 rounded-md shadow p-4">
               Main content goes here
             </div>
-          </div> */}
+          </div>
           <SideCards/>
         </div>
 
