@@ -9,6 +9,7 @@ const Card2 = () => {
       {/* <CanvasRevealEffect/> */}
 {/* <BackgroundGradient/> */}
 <BackgroundGradient/>
+
     </div>
   )
 }
