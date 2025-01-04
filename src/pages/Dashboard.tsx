@@ -60,11 +60,12 @@ import { MultiLevelSidebar } from "../components/DashBoard/Sidebar";
 import Navbar from "../components/DashBoard/Navbar";
 import Nav_Icons from "../components/DashBoard/Nav_Icons";
 import { SideCards } from "../components/DashBoard/SideCards";
+import MainContent from "../components/DashBoard/MainContent";
 
 function Dashboard() {
   // State for sidebar expansion
   const [isSidebarExpanded, setIsSidebarExpanded] = useState(false);
-
+  const [activeComponent, setActiveComponent] = useState("default");
   // Toggle sidebar expansion
   const toggleSidebarExpansion = () => setIsSidebarExpanded(!isSidebarExpanded);
 
@@ -90,7 +91,7 @@ function Dashboard() {
             </div>
 
             {/* MultiLevel Sidebar Content (Icons & Text) */}
-            <MultiLevelSidebar isExpanded={isSidebarExpanded} />
+            <MultiLevelSidebar isExpanded={isSidebarExpanded} setActiveComponent={setActiveComponent}/>
           </div>
         </div>
         <div
@@ -102,16 +103,13 @@ function Dashboard() {
         {/* Main Content Section */}
         <div className=" p-4">
           <div className="w-full mb-4">
-            <div className=" bg-gray-100 rounded-md shadow p-4">
-              Main content goes here
-            </div>
+            <MainContent activeComponent={activeComponent} />
           </div>
           <SideCards/>
         </div>
 
         {/* Nav_Icons positioned on the right side for large screens */}
    
-
       </div>
     </div>
   );

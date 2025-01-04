@@ -254,7 +254,7 @@ import {
 } from "@heroicons/react/24/solid";
 import { ChevronRightIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
 
-export function MultiLevelSidebar({ isExpanded }) {
+export function MultiLevelSidebar({ isExpanded,setActiveComponent }) {
   const [open, setOpen] = React.useState(0);
 
   // Pagination state for Patient sub-items
@@ -283,6 +283,12 @@ export function MultiLevelSidebar({ isExpanded }) {
       setCurrentPage(currentPage - 1);
     }
   };
+
+  const handleOptionClick = (componentName) => {
+    console.log('cli',componentName)
+    setActiveComponent(componentName);
+  };
+
 
   return (
     <Card className="h-auto w-full max-w-[20rem] p-4 shadow-xl shadow-blue-gray-900/5">
@@ -313,7 +319,7 @@ export function MultiLevelSidebar({ isExpanded }) {
             <List className="p-0">
               {/* Paginated Patient Sub-items */}
               {currentItems.map((item, index) => (
-                <ListItem key={index}>
+                <ListItem key={index} onClick={() => handleOptionClick(`${item}`)} >
                   <ListItemPrefix>
                     <ChevronRightIcon strokeWidth={3} className="h-3 w-5 text-gray-500" />
                   </ListItemPrefix>
