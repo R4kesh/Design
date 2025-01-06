@@ -1,19 +1,43 @@
-import React from 'react';
+import React,{useState} from 'react';
+import axios from 'axios';
 import styled from 'styled-components';
 
 const Form1 = () => {
+
+  const [email, setEmail] = useState('');
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post('http://localhost:3000/api/dataSave/getEmail', { email });
+      alert(response.data.message || 'Email saved successfully!');
+      setEmail(''); // Clear the input field
+    } catch (error) {
+      console.error(error);
+      alert(error.response?.data?.message || 'An error occurred!');
+    }
+  };
   return (
     <StyledWrapper>
-      <div className="card">
-        <span className="card__title">Subscribe</span>
-        <p className="card__content">Get fresh web design resources delivered straight to your inbox every week.
-        </p>
-        <div className="card__form">
-          <input placeholder="Your Email" type="text" />
-          <button className="sign-up"> Sign up</button>
-        </div>
-      </div>
-    </StyledWrapper>
+    <div className="card">
+      <span className="card__title">Subscribe</span>
+      <p className="card__content">
+        Get fresh web design resources delivered straight to your inbox every week.
+      </p>
+      <form className="card__form" onSubmit={handleSubmit}>
+        <input
+          placeholder="Your Email"
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
+        />
+        <button type="submit" className="sign-up">
+          Sign up
+        </button>
+      </form>
+    </div>
+  </StyledWrapper>
   );
 }
 
