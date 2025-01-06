@@ -477,7 +477,7 @@ import {
 } from "@material-tailwind/react";
 import * as HeroIcons from "@heroicons/react/24/solid";
 
-export function MultiLevelSidebar({ isExpanded,setActiveComponent  }) {
+export function MultiLevelSidebar({ isExpanded,setActiveComponent,setSelectedSection  }) {
   const [open, setOpen] = useState(0);
   const [sidebarContent, setSidebarContent] = useState([]);
   const [currentPage, setCurrentPage] = useState(1); // Pagination state
@@ -490,7 +490,9 @@ export function MultiLevelSidebar({ isExpanded,setActiveComponent  }) {
       .catch((error) => console.error("Error loading sidebar content:", error));
   }, []);
 
-  const handleOpen = (value) => {
+  const handleOpen = (value:any,section:any) => {
+console.log('section',section)
+setSelectedSection(section);
     setOpen(open === value ? 0 : value);
   };
 
@@ -543,7 +545,7 @@ export function MultiLevelSidebar({ isExpanded,setActiveComponent  }) {
                 >
                   <ListItem className="p-0" selected={open === index + 1}>
                     <AccordionHeader
-                      onClick={() => handleOpen(index + 1)}
+                      onClick={() => handleOpen(index + 1,section.title)}
                       className="border-b-0 p-3"
                     >
                       <ListItemPrefix>
@@ -611,7 +613,7 @@ export function MultiLevelSidebar({ isExpanded,setActiveComponent  }) {
                 >
                   <ListItem className="p-0" selected={open === index + 1}>
                     <AccordionHeader
-                      onClick={() => handleOpen(index + 1)}
+                      onClick={() => handleOpen(index + 1,section.title)}
                       className="border-b-0 p-3"
                     >
                       <ListItemPrefix>

@@ -132,6 +132,7 @@ function Dashboard() {
   // State for sidebar expansion
   const [isSidebarExpanded, setIsSidebarExpanded] = useState(false);
   const [activeComponent, setActiveComponent] = useState("default");
+  const [selectedSection,setSelectedSection]=useState("")
   // Toggle sidebar expansion
   const toggleSidebarExpansion = () => setIsSidebarExpanded(!isSidebarExpanded);
 
@@ -151,6 +152,7 @@ function Dashboard() {
           <MultiLevelSidebar
             isExpanded={isSidebarExpanded}
             setActiveComponent={setActiveComponent}
+            setSelectedSection={setSelectedSection}
           />
         </div>
 
@@ -170,7 +172,7 @@ function Dashboard() {
 
             {/* SideCards on the far right */}
             <div className="w-1/4 p-4">
-              <SideCards />
+              <SideCards selectedSection={selectedSection}/>
             </div>
           </div>
         </div>
