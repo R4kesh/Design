@@ -477,7 +477,7 @@ import {
 } from "@material-tailwind/react";
 import * as HeroIcons from "@heroicons/react/24/solid";
 
-export function MultiLevelSidebar({ isExpanded }) {
+export function MultiLevelSidebar({ isExpanded,setActiveComponent  }) {
   const [open, setOpen] = useState(0);
   const [sidebarContent, setSidebarContent] = useState([]);
   const [currentPage, setCurrentPage] = useState(1); // Pagination state
@@ -517,6 +517,12 @@ export function MultiLevelSidebar({ isExpanded }) {
     }
   };
 
+  const handleOptionClick = (componentName) => {
+    console.log('cli',componentName)
+    setActiveComponent(componentName);
+  };
+
+
   return (
     <div className="h-auto w-full max-w-[20rem] p-4 shadow-xl text-black shadow-blue-gray-900/5 bg-white">
       <List>
@@ -555,7 +561,7 @@ export function MultiLevelSidebar({ isExpanded }) {
                   <AccordionBody className="py-1">
                     <List className="p-0">
                       {paginateItems(section.items).map((item, subIndex) => (
-                        <ListItem key={subIndex}>
+                        <ListItem key={subIndex} onClick={() => handleOptionClick(`${item}`)}>
                           <ListItemPrefix>
                             <HeroIcons.ChevronRightIcon className="h-3 w-5 text-gray-500" />
                           </ListItemPrefix>
