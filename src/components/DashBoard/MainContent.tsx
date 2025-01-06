@@ -2,6 +2,7 @@ import React from "react";
 import Form1 from "../Forms/Form1";
 import Form2 from "../Forms/Form2";
 import Form3 from "../Forms/Form3";
+import CardGrid from "./CardDrag";
 
 const MainContent = ({ activeComponent }) => {
   const renderContent = () => {
@@ -19,6 +20,8 @@ const MainContent = ({ activeComponent }) => {
 
             case "Projects":
               return <div><Form3/></div>;
+              case "Result":
+                return <div><CardGrid/></div>
       case "default":
         return <div>Welcome! Please select an option from the sidebar.</div>;
 
