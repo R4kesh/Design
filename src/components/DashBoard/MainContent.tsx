@@ -3,6 +3,7 @@ import Form1 from "../Forms/Form1";
 import Form2 from "../Forms/Form2";
 import Form3 from "../Forms/Form3";
 import CardGrid from "./CardDrag";
+import Card1 from "../Cards/Card1";
 
 const MainContent = ({ activeComponent }) => {
   const renderContent = () => {
@@ -20,6 +21,12 @@ const MainContent = ({ activeComponent }) => {
 
             case "Projects":
               return <div><Form3/></div>;
+
+
+              case "Subject":
+                return <div><Card1/></div>;
+
+
               case "Result":
                 return <div><CardGrid/></div>
       case "default":

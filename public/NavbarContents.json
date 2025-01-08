@@ -1,0 +1,9 @@
+{
+    "menu": [
+      { "title": "Home", "link": "#" },
+      { "title": "Services", "link": "#" },
+      { "title": "Pricing", "link": "#" },
+      { "title": "Contact", "link": "#" }
+    ]
+  }
+  
