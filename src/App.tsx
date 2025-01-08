@@ -9,6 +9,7 @@ import Form2Page from './pages/Form2Page';
 import Dashboard from './pages/Dashboard';
 import DragCardPage from './pages/DragCardPage';
 import FormBuilder from './components/DashBoard/FormBuilder';
+import Login from './components/Login';
 
 
 
@@ -27,6 +28,7 @@ export default function App() {
         <Route path="/drag" element={<DragCardPage/>} />
         <Route path="/formbuilder" element={<FormBuilder/>} />
 
+        <Route path="/login" element={<Login/>} />
 
         
       </Routes>
