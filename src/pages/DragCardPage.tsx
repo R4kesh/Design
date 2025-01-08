@@ -68,6 +68,7 @@ import { MultiLevelSidebar } from "../components/DashBoard/Sidebar";
 import Navbar from "../components/DashBoard/Navbar";
 import Nav_Icons from "../components/DashBoard/Nav_Icons";
 import CardGrid from "../components/DashBoard/CardDrag";
+import TabCard from "../components/DashBoard/TabCard";
 
 function DragCardPage() {
   const [isSidebarExpanded, setIsSidebarExpanded] = useState(false);
@@ -107,7 +108,7 @@ function DragCardPage() {
           <div className="flex flex-col overflow-y-auto p-6">
             <div className=" flex-col items-center gap-4">
               {/* Multiple Cards */}
-              <CardGrid />
+              <TabCard />
              
               
             </div>

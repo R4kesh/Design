@@ -44,9 +44,10 @@ export function SideCards({ selectedSection }) {
   };
 
   return (
-    <div className="flex flex-col gap-3">
+    <div className="flex flex-col gap-3 ">
       {currentItems.map((item, index) => (
-        <Card key={index} className="w-72 h-40">
+        <Card key={index}   className="w-72 h-40 bg-sky-100 rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+>
           <CardBody className="p-4">
             <Typography variant="h6" color="blue-gray" className="mb-1">
               {item}

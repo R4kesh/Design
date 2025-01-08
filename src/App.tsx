@@ -8,6 +8,7 @@ import Form1Page from './pages/Form1Page';
 import Form2Page from './pages/Form2Page';
 import Dashboard from './pages/Dashboard';
 import DragCardPage from './pages/DragCardPage';
+import FormBuilder from './components/DashBoard/FormBuilder';
 
 
 
@@ -24,6 +25,7 @@ export default function App() {
         <Route path="/form2" element={<Form2Page/>} />
         <Route path="/dashboard" element={<Dashboard/>} />
         <Route path="/drag" element={<DragCardPage/>} />
+        <Route path="/formbuilder" element={<FormBuilder/>} />
 
 
         
