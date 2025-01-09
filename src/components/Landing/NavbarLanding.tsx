@@ -219,6 +219,7 @@
 
 import React, { useState, useEffect } from "react";
 import { FaMoon, FaSun } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function NavbarLanding() {
   const [darkMode, setDarkMode] = useState(false);
@@ -250,7 +251,7 @@ function NavbarLanding() {
     <nav
       className={`bg-white ${darkMode ? "dark:bg-gray-900" : ""} border-b shadow-md`}
     >
-      <div className="max-w-screen-xl mx-auto flex items-center justify-between p-4">
+      <div className="max-w-screen-xl mx-auto  flex items-center justify-between p-4">
         {/* Logo */}
         <a href="#" className="text-3xl font-semibold dark:text-white text-gray-900">
           Management System
@@ -287,12 +288,12 @@ function NavbarLanding() {
         >
           <ul className="flex flex-col md:flex-row md:space-x-8 space-y-4 md:space-y-0 text-md font-semibold">
             <li>
-              <a
-                href="#"
+             <Link to='/'> <a
+                
                 className="text-gray-700 dark:text-white hover:text-blue-500 dark:hover:text-blue-400"
               >
                 Home
-              </a>
+              </a></Link>
             </li>
             <li className="relative">
               <button
@@ -347,12 +348,12 @@ function NavbarLanding() {
               </div>
             </li>
             <li>
-              <a
-                href="#"
+              <Link to='/aboutUs'><a
+               
                 className="text-gray-700 dark:text-white hover:text-blue-500 dark:hover:text-blue-400"
               >
                 About Us
-              </a>
+              </a></Link>
             </li>
             <li>
               <a
@@ -375,7 +376,7 @@ function NavbarLanding() {
             <li className="relative">
               <button
                 onClick={toggleDropdowns}
-                className="flex items-center text-gray-700 dark:text-white hover:text-blue-500 dark:hover:text-blue-400"
+                className="flex items-center  text-gray-700 dark:text-white hover:text-blue-500 dark:hover:text-blue-400"
               >
                 More
                 <svg
