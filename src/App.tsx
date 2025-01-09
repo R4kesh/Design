@@ -8,6 +8,9 @@ import Form1Page from './pages/Form1Page';
 import Form2Page from './pages/Form2Page';
 import Dashboard from './pages/Dashboard';
 import DragCardPage from './pages/DragCardPage';
+import DoctorDashboard from './pages/DoctorDashboard';
+import ProfileSection from './components/DoctorDashboard/ProfileSection';
+import Appointments from './components/DoctorDashboard/Appointments';
 import FormBuilder from './components/DashBoard/FormBuilder';
 import Login from './components/Login';
 import LandingPage from './pages/LandingPage';
@@ -27,6 +30,8 @@ export default function App() {
         <Route path="/form2" element={<Form2Page/>} />
         <Route path="/dashboard" element={<Dashboard/>} />
         <Route path="/drag" element={<DragCardPage/>} />
+        <Route path="/doctor_Dashboard" element={<DoctorDashboard/>} />
+        <Route path="/appointments" element={<Appointments/>} />
         <Route path="/formbuilder" element={<FormBuilder/>} />
 
         <Route path="/login" element={<Login/>} />
