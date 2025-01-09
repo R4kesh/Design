@@ -166,12 +166,12 @@ function Dashboard() {
           {/* Main Content */}
           <div className="flex flex-1">
             {/* MainContent (right next to Sidebar and below Nav_Icons) */}
-            <div className="flex-grow p-4">
+            <div className="flex-grow p-4 ">
               <MainContent activeComponent={activeComponent} />
             </div>
 
             {/* SideCards on the far right */}
-            <div className="w-1/4 p-4">
+            <div className="w-1/4 p-4 ">
               <SideCards selectedSection={selectedSection}/>
             </div>
           </div>

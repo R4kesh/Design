@@ -11,6 +11,8 @@ import DragCardPage from './pages/DragCardPage';
 import DoctorDashboard from './pages/DoctorDashboard';
 import ProfileSection from './components/DoctorDashboard/ProfileSection';
 import Appointments from './components/DoctorDashboard/Appointments';
+import FormBuilder from './components/DashBoard/FormBuilder';
+import Login from './components/Login';
 
 
 
@@ -29,6 +31,9 @@ export default function App() {
         <Route path="/drag" element={<DragCardPage/>} />
         <Route path="/doctor_Dashboard" element={<DoctorDashboard/>} />
         <Route path="/appointments" element={<Appointments/>} />
+        <Route path="/formbuilder" element={<FormBuilder/>} />
+
+        <Route path="/login" element={<Login/>} />
 
         
       </Routes>
