@@ -1,6 +1,7 @@
 
 
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'; 
 
 function NavbarLanding() {
   const [darkMode, setDarkMode] = useState(false);
@@ -94,8 +95,13 @@ function NavbarLanding() {
                 <a href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Request a Demo</a>
               </li>
               <li>
-                <a href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing and Discounts</a>
-              </li>
+  <Link
+    to="/pricing"  // Replace with the actual path you want to navigate to
+    className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+  >
+    Pricing and Discounts
+  </Link>
+</li>
             </ul>
           </div>
            <div className="flex items-center md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
