@@ -1,0 +1,47 @@
+{
+    "header": {
+      "title": "Pay Once, Use Forever",
+      "subtitle": "No subscriptions, just a one-time payment to access our management system with free updates for life."
+    },
+    "pricing": {
+      "soloPlan": {
+        "title": "Why Choose Our System?",
+        "description": "Our patient and doctor management system is designed to streamline healthcare operations with user-friendly interfaces and robust features. Whether you are managing appointments, patient records, or analyzing clinic performance, our platform provides the tools to enhance efficiency and ensure better care for your patients.",
+        "features": [
+          "Easy integration with existing workflows.",
+          "Comprehensive data security and privacy compliance.",
+          "Future-proof with regular feature enhancements.",
+          "Accessible on multiple devices for seamless usage."
+        ]
+      },
+      "teamPlan": {
+        "title": "Team",
+        "description": "A license for up to 20 users. Ideal for clinics and hospitals.",
+        "price": "$400",
+        "features": [
+          "Unlock the full potential of the management system for your entire team.",
+          "Save time with a ready-to-use platform.",
+          "Includes premium 24/7 support."
+        ],
+        "buttonText": "Pay Now"
+      }
+    },
+    "features": {
+      "title": "Why Choose Our Management System?",
+      "features": [
+        {
+          "title": "Ease of Use",
+          "description": "A user-friendly interface for both patients and doctors to streamline operations."
+        },
+        {
+          "title": "Advanced Features",
+          "description": "Comprehensive tools for scheduling, records, and communication."
+        },
+        {
+          "title": "Lifetime Access",
+          "description": "One-time payment for unlimited access with free updates forever."
+        }
+      ]
+    }
+  }
+  

@@ -15,6 +15,7 @@ import FormBuilder from './components/DashBoard/FormBuilder';
 import Login from './components/Login';
 import LandingPage from './pages/LandingPage';
 import AboutUs from './components/Landing/AboutUs';
+import PricingAndDiscound from './pages/PricingAndDiscound';
 
 
 
@@ -44,6 +45,7 @@ export default function App() {
         <Route path="/formbuilder" element={<FormBuilder/>} />
 
         <Route path="/login" element={<Login/>} />
+        <Route path="/pricing" element={<PricingAndDiscound/>} />
 
         
       </Routes>
