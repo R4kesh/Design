@@ -13,6 +13,7 @@ import ProfileSection from './components/DoctorDashboard/ProfileSection';
 import Appointments from './components/DoctorDashboard/Appointments';
 import FormBuilder from './components/DashBoard/FormBuilder';
 import Login from './components/Login';
+import LandingPage from './pages/LandingPage';
 
 
 
@@ -21,7 +22,7 @@ export default function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Sidebar />} />
+        <Route path="/" element={<LandingPage />} />
         <Route path="/sidebar2" element={<Sidebar2/>} />
         <Route path="/sidebar3" element={<Sidebar3/>} />
         <Route path="/sidebar4_1" element={<Sidebar4_1/>} />
