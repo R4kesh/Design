@@ -359,67 +359,80 @@ function LandingPage() {
       </div>
     </section>
     
-
-      {/* Add more Sections with Images */}
-      <section id="features" className="py-16 bg-gray-100">
-  <div className="container mx-auto px-6 text-center">
-    <h2 className="text-4xl font-semibold text-gray-800 mb-12">Advanced Features</h2>
-    <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
-      {/* Feature 1: Health Analytics and Reports */}
-      <motion.div
-        className="bg-white p-6 rounded-lg shadow-lg"
-        whileHover={{ scale: 1.05 }}
-        transition={{ duration: 0.3 }}
-      >
-        <img
-          src="https://img.freepik.com/free-photo/dashboard-concept-with-graphs-charts_23-2149081674.jpg"
-          alt="Health Analytics"
-          className="w-full h-64 object-cover mb-4 rounded"
-        />
-        <h3 className="text-xl font-semibold mb-2">Health Analytics and Reports</h3>
-        <p className="text-gray-600">
-          Generate insightful health analytics and detailed reports for patients and doctors. Track trends and monitor progress over time.
+    <section id="features" className="py-16 bg-gray-100">
+  <div className="container mx-auto px-6">
+    <div className="grid md:grid-cols-2 gap-12 items-center">
+      {/* Left Content: Text */}
+      <div>
+        <h2 className="text-4xl font-semibold text-gray-800 mb-6">
+          Enhance Your Healthcare Experience
+        </h2>
+        <p className="text-gray-600 mb-4 text-lg">
+          Our platform bridges the gap between patients and doctors, offering seamless virtual communication and practice management solutions.
         </p>
-      </motion.div>
+        <ul className="space-y-4 text-gray-600">
+          <li className="flex items-start">
+            <span className="mr-4 text-blue-500">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={2}
+                stroke="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M9 12h6m-3-3v6m5 4H7a2 2 0 01-2-2V7a2 2 0 012-2h10a2 2 0 012 2v10a2 2 0 01-2 2z"
+                />
+              </svg>
+            </span>
+            <div>
+              <h4 className="text-lg font-semibold">Virtual Communication</h4>
+              <p>
+                Enable secure video calls, messaging, and real-time updates between doctors and patients for better healthcare outcomes.
+              </p>
+            </div>
+          </li>
+          <li className="flex items-start">
+            <span className="mr-4 text-blue-500">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={2}
+                stroke="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M20 12H4m16 0l-7-7m7 7l-7 7"
+                />
+              </svg>
+            </span>
+            <div>
+              <h4 className="text-lg font-semibold">Practice Management</h4>
+              <p>
+                Simplify clinic operations with automated scheduling, patient record management, and billing integration.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
 
-      {/* Feature 2: Payment Integration */}
-      <motion.div
-        className="bg-white p-6 rounded-lg shadow-lg"
-        whileHover={{ scale: 1.05 }}
-        transition={{ duration: 0.3 }}
-      >
+      {/* Right Content: Image */}
+      <div>
         <img
-          src="https://img.freepik.com/free-photo/online-payment_23-2148132488.jpg"
-          alt="Payment Integration"
-          className="w-full h-64 object-cover mb-4 rounded"
+          src="https://shashwatco.com/wp-content/themes/shashwat/assets/img/Healthcare-Software-Mobile-and-Web-Application-Development.jpg"
+          alt="Virtual Communication"
+          className="rounded-lg shadow-lg"
         />
-        <h3 className="text-xl font-semibold mb-2">Payment Integration</h3>
-        <p className="text-gray-600">
-          Secure and seamless payment options integrated directly into the system. Supports online transactions and insurance claims.
-        </p>
-      </motion.div>
-
-      {/* Feature 3: Feedback System */}
-      <motion.div
-        className="bg-white p-6 rounded-lg shadow-lg"
-        whileHover={{ scale: 1.05 }}
-        transition={{ duration: 0.3 }}
-      >
-        <img
-          src="https://img.freepik.com/free-photo/person-pressing-feedback-form-virtual-screen_53876-125817.jpg"
-          alt="Feedback System"
-          className="w-full h-64 object-cover mb-4 rounded"
-        />
-        <h3 className="text-xl font-semibold mb-2">Feedback System</h3>
-        <p className="text-gray-600">
-          Gather feedback from patients to improve services. Allows users to rate and review their experience with healthcare providers.
-        </p>
-      </motion.div>
+      </div>
     </div>
   </div>
 </section>
-
-
 
 
 

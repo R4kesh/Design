@@ -16,6 +16,7 @@ import Login from './components/Login';
 import LandingPage from './pages/LandingPage';
 import AboutUs from './components/Landing/AboutUs';
 import PricingAndDiscound from './pages/PricingAndDiscound';
+import ContactUs from './components/Landing/ContactUs';
 
 
 
@@ -26,6 +27,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/aboutUs" element={<AboutUs />} />
+        <Route path="/contactUs" element={<ContactUs />} />
 
 
 

@@ -165,14 +165,14 @@ function NavbarLanding() {
               </a>
             </li>
             <li>
-              <a
-                href="#"
+              <Link to='/contactUs'><a
+                
                 className="text-gray-700 dark:text-white hover:text-blue-500 dark:hover:text-blue-400"
               >
                  
                       Contact Us
                   
-              </a>
+              </a></Link>
             </li>
             {/* More Dropdown */}
             
