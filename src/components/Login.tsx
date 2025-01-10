@@ -4,31 +4,7 @@ function Login() {
   return (
     <div className="h-full bg-gray-400 dark:bg-gray-900">
       {/* Header */}
-      <header className="bg-blue-500 dark:bg-blue-800 text-white py-4 shadow-lg">
-        <div className="container mx-auto flex justify-between items-center px-6">
-          <h1 className="text-xl font-bold">MyApp</h1>
-          <nav className="flex space-x-4">
-            <a
-              href="#"
-              className="hover:text-gray-200 transition-colors duration-200"
-            >
-              Home
-            </a>
-            <a
-              href="#"
-              className="hover:text-gray-200 transition-colors duration-200"
-            >
-              About
-            </a>
-            <a
-              href="#"
-              className="hover:text-gray-200 transition-colors duration-200"
-            >
-              Contact
-            </a>
-          </nav>
-        </div>
-      </header>
+      
 
       {/* Login Form */}
       <div className="mx-auto">
