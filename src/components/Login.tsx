@@ -68,6 +68,9 @@ function Login() {
 
   return (
     <div className="h-full bg-gray-400 dark:bg-gray-900">
+      {/* Header */}
+      
+
       {/* Login Form */}
       <div className="mx-auto">
         <div className="flex justify-center px-6 py-12">
