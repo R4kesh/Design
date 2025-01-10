@@ -153,7 +153,7 @@ const Form1 = () => {
     e.preventDefault();
     console.log('formData',formData)
     try {
-      const response = await axios.post('http://localhost:3000/api/dataSave/getEmail', formData);
+      const response = await axios.post(`${import.meta.env.VITE_BASE_URL}/api/dataSave/getEmail`, formData);
       alert(response.data.message || 'Patient details saved successfully!');
     } catch (error) {
       console.error(error);

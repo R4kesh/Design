@@ -145,17 +145,19 @@ function NavbarLanding() {
               </a>
             </li>
             <li>
-              <a
-                href="#"
-                className="text-gray-700 dark:text-white hover:text-blue-500 dark:hover:text-blue-400"
-              >
-                Pricing and Discounts
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="text-gray-700 dark:text-white hover:text-blue-500 dark:hover:text-blue-400"
+  <Link
+    to="/pricing" // Replace with the appropriate route path
+    className="text-gray-700 dark:text-white hover:text-blue-500 dark:hover:text-blue-400"
+  >
+    Pricing and Discounts
+  </Link>
+</li>
+
+            {/* More Dropdown */}
+            <li className="relative">
+              
+                <a
+                className="flex items-center  text-gray-700 dark:text-white hover:text-blue-500 dark:hover:text-blue-400"
               >
                  
                       Chat
